@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Friends with ActivityPub – Deine nachhaltige Identität im Web</title>
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css">
+	<style>
+		:root {
+			--r-heading1-size: 3em;
+		}
+		object {
+			fill: var( --r-background-color );
+			background: var( --r-background-color );
+		}
+		ul li {
+			margin-bottom: .5em;
+			list-style-type: none;
+		}
+		table.contact {
+			margin-top: 2em;
+		}
+		table.contact tr td, table.contact tr td a {
+			color: var( --r-main-color );
+		}
+		table.contact tr td {
+			font-size: 90%;
+			border-bottom: 0;
+		}
+		a:link {
+			text-decoration: underline;
+		}
+		a.normal:link, a.normal:active, a.normal:visited, .normal {
+			color: var( --r-main-color );
+		}
+		.small {
+			font-size: 80%;
+		}
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Friends with ActivityPub</h1>
+				<h2>Deine nachhaltige Identität im Web</h2>
+				<div style="font-size: .5em; margin-top: 1em; display: flex; justify-content: center; align-items: center">
+				<div style="margin-right: 2em">
+					<img src="img/alex.kirk.jpg" width="128" alt="Alex Kirk" style="border-radius: 64px"/><br/>
+					Alex Kirk<br/>
+					<table class="contact">
+						<tr><td>Blog</td><td><a href="https://alex.kirk.at/">https://alex.kirk.at/</a></td></tr>
+						<tr><td>ActivityPub</td><td>@alex@kirk.at</td></tr>
+						<tr><td>Matrix</td><td>@alex:kirk.at</td></tr>
+					</table>
+				</div>
+				<div style="margin-left: 2em">
+					<img src="img/pfefferle.jpg" width="128" alt="Matthias Pfefferle" style="border-radius: 64px"/><br/>
+					Matthias Pfefferle<br/>
+					<table class="contact">
+						<tr><td>Blog</td><td><a href="https://alex.kirk.at/">https://notiz.blog/</a></td></tr>
+						<tr><td>ActivityPub</td><td>@pfefferle@notiz.blog</td></tr>
+						<tr><td>ActivityPub</td><td>@pfefferle@mastodon.social</td></tr>
+					</table>
+				</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Identität und Soziale Netzwerke</h2>
+				<ul>
+					<li class="fragment">Um mitzumachen braucht man einen Account</li>
+					<li class="fragment">Wer zuerst kommt, hat den Usernamen</li>
+					<li class="fragment">"Handle Grabbing"</li>
+					<li class="fragment">→ Verstreute Profile</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script src="dist/plugin/notes/notes.js"></script>
+	<script>
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			progress: true,
+			hash: true,
+			autoPlayMedia: true,
+			slideNumber: 'c/t',
+			plugins: [ RevealNotes ]
+		}).then( () => {
+		});
+	</script>
+</body>
+</html>
