@@ -85,7 +85,7 @@
 			autoPlayMedia: true,
 			slideNumber: 'c/t',
 			plugins: [ RevealNotes, RevealMarkdown ],
-			dependencies: [{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } }]
+			dependencies: [{ src: 'dist/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } }]
 		}).then( () => {
 		});
 	</script>
