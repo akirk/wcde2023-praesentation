@@ -1,1 +1,1 @@
-# Unterschiede zu RSS Alex Kirk
+# Unterschiede zu RSS

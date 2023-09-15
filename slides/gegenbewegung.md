@@ -1,2 +1,2 @@
-# Gegenbewegung Matthias Pfefferle
-- 2007 Diso https://diso-project.org/ 
+# Gegenbewegung
+- 2007 Diso https://diso-project.org/

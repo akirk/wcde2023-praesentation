@@ -1,1 +1,1 @@
-# ActivityPub, was ist das für ein Protokoll Matthias Pfefferle
+# ActivityPub, was ist das für ein Protokoll
