@@ -39,15 +39,6 @@
 
 
 			}
-			else {
-
-			    this_section.innerHTML = '<section data-state="alert">' +
-				'ERROR: The attempt to fetch ' + url + ' failed with HTTP status ' + xhr.status + '.' +
-				'Check your browser\'s JavaScript console for more details.' +
-				'<p>Remember that you need to serve the presentation HTML from a HTTP server.</p>' +
-				'</section>';
-
-			}
 		    }
 		};
 
@@ -57,7 +48,6 @@
 		    xhr.send();
 		}
 		catch ( e ) {
-		    alert( 'Failed to get the file ' + url + '. Make sure that the presentation and the file are served by a HTTP server and the file can be found there. ' + e );
 		}
 
 	    }
