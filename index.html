@@ -74,7 +74,7 @@
 		</div>
 	</div>
 	<script src="dist/reveal.js"></script>
-	<script src="dist/plugin/external/external.js"></script>
+	<script src="dist/plugin/markdown/markdown.js"></script>
 	<script src="dist/plugin/notes/notes.js"></script>
 	<script>
 		Reveal.initialize({
@@ -84,7 +84,7 @@
 			hash: true,
 			autoPlayMedia: true,
 			slideNumber: 'c/t',
-			plugins: [ RevealNotes ],
+			plugins: [ RevealNotes, RevealMarkdown ],
 			dependencies: [{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } }]
 		}).then( () => {
 		});
