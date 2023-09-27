@@ -1,3 +1,4 @@
+<!-- Matthias Pfefferle -->
 # WordPress ActivityPub Plugin
 - Abonniert werden
 - ActivityPub Identität: username@domain

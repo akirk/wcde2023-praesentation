@@ -1,3 +1,4 @@
+<!-- Alex Kirk -->
 # Kombiniert mit Friends
 - Konzepte passen gut zusammen
 - Nachteile 2er Plugins

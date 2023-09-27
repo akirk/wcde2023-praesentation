@@ -13,9 +13,17 @@
 			fill: var( --r-background-color );
 			background: var( --r-background-color );
 		}
+		.reveal ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
 		ul li {
 			margin-bottom: .5em;
 			list-style-type: none;
+		}
+		li ul li {
+			margin-bottom: .2em;
+			list-style-type: "- ";
 		}
 		table.contact {
 			margin-top: 2em;
@@ -36,6 +44,12 @@
 		.small {
 			font-size: 80%;
 		}
+		tt {
+			border-radius: 4px;
+			border: 1px solid #666;
+			padding: 2px 6px;
+		}
+
 	</style>
 </head>
 <body>
@@ -69,11 +83,9 @@
 			<section data-external="slides/identitaet.html">
 			</section>
 
-			<section data-markdown="slides/identitaet.md">
-			</section>
-
 			<section data-markdown="slides/blogging.md"></section>
-			<section data-markdown="slides/vormarsch.md"></section>
+			<section data-external="slides/geschichte.html"></section>
+			<section data-external="slides/warum-soziale-netzwerke.html"></section>
 			<section data-markdown="slides/gegenbewegung.md"></section>
 			<section data-markdown="slides/friends.md"></section>
 			<section data-markdown="slides/activitypub.md"></section>
