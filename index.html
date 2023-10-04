@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Friends with ActivityPub – Deine nachhaltige Identität im Web</title>
@@ -9,74 +10,109 @@
 		:root {
 			--r-heading1-size: 3em;
 		}
+
 		object {
-			fill: var( --r-background-color );
-			background: var( --r-background-color );
+			fill: var(--r-background-color);
+			background: var(--r-background-color);
 		}
+
 		.reveal ul {
 			margin-left: 0;
 			padding-left: 0;
 		}
+
 		ul li {
 			margin-bottom: .5em;
 			list-style-type: none;
 		}
+
 		li ul li {
 			margin-bottom: .2em;
 			list-style-type: "- ";
 		}
+
 		table.contact {
 			margin-top: 2em;
 		}
-		table.contact tr td, table.contact tr td a {
-			color: var( --r-main-color );
+
+		table.contact tr td,
+		table.contact tr td a {
+			color: var(--r-main-color);
 		}
+
 		table.contact tr td {
 			font-size: 90%;
 			border-bottom: 0;
 		}
+
 		a:link {
 			text-decoration: underline;
 		}
-		a.normal:link, a.normal:active, a.normal:visited, .normal {
-			color: var( --r-main-color );
+
+		a.normal:link,
+		a.normal:active,
+		a.normal:visited,
+		.normal {
+			color: var(--r-main-color);
 		}
+
 		.small {
 			font-size: 80%;
 		}
+
 		tt {
 			border-radius: 4px;
 			border: 1px solid #666;
 			padding: 2px 6px;
 		}
-
 	</style>
 </head>
+
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<section>
 				<h1>Friends with ActivityPub</h1>
 				<h2>Deine nachhaltige Identität im Web</h2>
-				<div style="font-size: .5em; margin-top: 1em; display: flex; justify-content: center; align-items: center">
-				<div style="margin-right: 2em">
-					<img src="img/alex.kirk.jpg" width="128" alt="Alex Kirk" style="border-radius: 64px"/><br/>
-					Alex Kirk<br/>
-					<table class="contact">
-						<tr><td>Blog</td><td><a href="https://alex.kirk.at/">https://alex.kirk.at/</a></td></tr>
-						<tr><td>ActivityPub</td><td>@alex@kirk.at</td></tr>
-						<tr><td>Matrix</td><td>@alex:kirk.at</td></tr>
-					</table>
-				</div>
-				<div style="margin-left: 2em">
-					<img src="img/pfefferle.jpg" width="128" alt="Matthias Pfefferle" style="border-radius: 64px"/><br/>
-					Matthias Pfefferle<br/>
-					<table class="contact">
-						<tr><td>Blog</td><td><a href="https://notiz.blog/">https://notiz.blog/</a></td></tr>
-						<tr><td>ActivityPub</td><td>@pfefferle@notiz.blog</td></tr>
-						<tr><td>ActivityPub</td><td>@pfefferle@mastodon.social</td></tr>
-					</table>
-				</div>
+				<div
+					style="font-size: .5em; margin-top: 1em; display: flex; justify-content: center; align-items: center">
+					<div style="margin-right: 2em">
+						<img src="img/alex.kirk.jpg" width="128" alt="Alex Kirk" style="border-radius: 64px" /><br />
+						Alex Kirk<br />
+						<table class="contact">
+							<tr>
+								<td>Blog</td>
+								<td><a href="https://alex.kirk.at/">https://alex.kirk.at/</a></td>
+							</tr>
+							<tr>
+								<td>ActivityPub</td>
+								<td>@alex@kirk.at</td>
+							</tr>
+							<tr>
+								<td>Matrix</td>
+								<td>@alex:kirk.at</td>
+							</tr>
+						</table>
+					</div>
+					<div style="margin-left: 2em">
+						<img src="img/pfefferle.jpg" width="128" alt="Matthias Pfefferle"
+							style="border-radius: 64px" /><br />
+						Matthias Pfefferle<br />
+						<table class="contact">
+							<tr>
+								<td>Blog</td>
+								<td><a href="https://notiz.blog/">https://notiz.blog/</a></td>
+							</tr>
+							<tr>
+								<td>ActivityPub</td>
+								<td>@pfefferle@notiz.blog</td>
+							</tr>
+							<tr>
+								<td>ActivityPub</td>
+								<td>@pfefferle@mastodon.social</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</section>
 
@@ -92,11 +128,11 @@
 			<section data-external="slides/geschichte.html"></section>
 			<section data-external="slides/warum-soziale-netzwerke.html"></section>
 			<section data-markdown="slides/gegenbewegung.md"></section>
-			<section data-markdown="slides/friends.md"></section>
+			<section data-markdown="slides/friends.html"></section>
 			<section data-markdown="slides/activitypub.md"></section>
-			<section data-markdown="slides/unterschiede.md"></section>
+			<section data-markdown="slides/unterschiede.html"></section>
 			<section data-markdown="slides/wordpress.md"></section>
-			<section data-markdown="slides/kombiniert.md"></section>
+			<section data-markdown="slides/kombiniert.html"></section>
 			<section data-markdown="slides/domain.md"></section>
 			<section data-external="slides/finanzierung.html"></section>
 			<section data-markdown="slides/ausblick.md"></section>
@@ -114,19 +150,20 @@
 			autoPlayMedia: true,
 			slideNumber: 'c/t',
 			width: 1200,
-			plugins: [ RevealNotes, RevealMarkdown ],
-			dependencies: [{ src: 'dist/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } }]
-		}).then( () => {
+			plugins: [RevealNotes, RevealMarkdown],
+			dependencies: [{ src: 'dist/plugin/external/external.js', condition: function () { return !!document.querySelector('[data-external]'); } }]
+		}).then(() => {
 		});
 		const videos = document.querySelectorAll('video');
 
-		videos.forEach(function(video) {
-			video.addEventListener('click', function() {
+		videos.forEach(function (video) {
+			video.addEventListener('click', function () {
 				video.currentTime = 0; // Resets video playback to the beginning
 				video.play(); // Starts the video playback
-		});
+			});
 		});
 
 	</script>
 </body>
+
 </html>
