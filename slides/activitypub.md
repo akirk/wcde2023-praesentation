@@ -47,27 +47,27 @@
 
 <section data-markdown>
 
-<pre><code>&lt;entry xmlns=&quot;http://www.w3.org/2005/Atom&quot;
-    xmlns:activity=&quot;http://activitystrea.ms/spec/1.0/&quot;&gt;
-  &lt;id&gt;tag:photopanic.example.com,2009:activity/4859/4352&lt;/id&gt;
-  &lt;title&gt;Geraldine posted a Photo on PhotoPanic&lt;/title&gt;
-  &lt;link rel=&quot;alternate&quot; type=&quot;text/html&quot; href=&quot;http://example.com/...&quot; /&gt;
-  &lt;activity:verb&gt;post&lt;/activity:verb&gt;
-  &lt;activity:object&gt;
-    &lt;id&gt;tag:photopanic.example.com,2009:photo/4352&lt;/id&gt;
-    &lt;title&gt;My Cat&lt;/title&gt;
-    &lt;published&gt;2009-11-02T15:29:00Z&lt;/published&gt;
-    &lt;link rel=&quot;alternate&quot; type=&quot;text/html&quot; href=&quot;http://example.com/...&quot; /&gt;
-    &lt;activity:object-type&gt;photo&lt;/activity:object-type&gt;
-  &lt;/activity:object&gt;
-  &lt;content type=&quot;html&quot;&gt;...&lt;/content&gt;
-&lt;/entry&gt;</code></pre>
+<pre><code><entry xmlns="http://www.w3.org/2005/Atom"
+    xmlns:activity="http://activitystrea.ms/spec/1.0/">
+  <id>tag:photopanic.example.com,2009:activity/4859/4352</id>
+  <title>Geraldine posted a Photo on PhotoPanic</title>
+  <link rel="alternate" type="text/html" href="http://example.com/..." />
+  <activity:verb>post</activity:verb>
+  <activity:object>
+    <id>tag:photopanic.example.com,2009:photo/4352</id>
+    <title>My Cat</title>
+    <published>2009-11-02T15:29:00Z</published>
+    <link rel="alternate" type="text/html" href="http://example.com/..." />
+    <activity:object-type>photo</activity:object-type>
+  </activity:object>
+  <content type="html">...</content>
+</entry></code></pre>
 
 </section>
 
 <section data-markdown>
 
-<pre><code>{
+<pre><code class="json">{
     "@context": "https://www.w3.org/ns/activitystreams",
     "type": "Create",
     "id": "https://social.example/alyssa/posts/a29a6843",
@@ -86,7 +86,7 @@
 
 <section data-markdown>
 
-<pre><code>{
+<pre><code class="json">{
     "@context": "https://www.w3.org/ns/activitystreams",
     "type": "Like",
     "id": "https://social.example/alyssa/posts/5312e10e",
@@ -99,7 +99,7 @@
 
 <section data-markdown>
 
-<pre><code>{
+<pre><code class="json">{
     "@context": "https://www.w3.org/ns/activitystreams",
     "type": "Follow",
     "id": "https://social.example/alyssa/follow/12344bx3",
@@ -107,5 +107,11 @@
     "actor": "https://social.example/alyssa/",
     "object": "https://chatty.example/ben/"
 }</code></pre>
+
+</section>
+
+<section data-markdown>
+
+# Pub
 
 </section>
