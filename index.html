@@ -148,6 +148,7 @@
 	<script src="dist/reveal.js"></script>
 	<script src="dist/plugin/markdown/markdown.js"></script>
 	<script src="dist/plugin/notes/notes.js"></script>
+	<script src="dist/plugin/highlight/highlight.js"></script>
 	<script>
 		Reveal.initialize({
 			controls: true,
@@ -157,7 +158,7 @@
 			autoPlayMedia: true,
 			slideNumber: 'c/t',
 			width: 1200,
-			plugins: [RevealNotes, RevealMarkdown],
+			plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
 			dependencies: [{ src: 'dist/plugin/external/external.js', condition: function () { return !!document.querySelector('[data-external]'); } }]
 		}).then(() => {
 		});
