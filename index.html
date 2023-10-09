@@ -162,13 +162,12 @@
 			plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
 			dependencies: [{ src: 'dist/plugin/external/external.js', condition: function () { return !!document.querySelector('[data-external]'); } }]
 		}).then(() => {
-		});
-		const videos = document.querySelectorAll('video');
-
-		videos.forEach(function (video) {
-			video.addEventListener('click', function () {
-				video.currentTime = 0; // Resets video playback to the beginning
-				video.play(); // Starts the video playback
+			const videos = document.querySelectorAll('video');
+			videos.forEach(function (video) {
+				video.addEventListener('click', function () {
+					video.currentTime = 0; // Resets video playback to the beginning
+					video.play(); // Starts the video playback
+				});
 			});
 		});
 
