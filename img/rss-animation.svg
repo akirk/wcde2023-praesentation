@@ -4,7 +4,8 @@
 @keyframes a1_o { 0% { opacity: 0; } 12.644% { opacity: 0; } 14.943% { opacity: 1; } 100% { opacity: 1; } }
 @keyframes a2_o { 0% { opacity: 0; } 71.264% { opacity: 0; } 73.563% { opacity: 1; } 100% { opacity: 1; } }
 @keyframes a3_t { 0% { transform: translate(924.2px,564.5px) scale(.5,.5); } 71.264% { transform: translate(924.2px,564.5px) scale(.5,.5); } 82.759% { transform: translate(110.5px,342.9px) scale(.5,.5); } 100% { transform: translate(110.5px,342.9px) scale(.5,.5); } }
-@keyframes a3_o { 0% { opacity: 1; } 74.713% { opacity: 1; } 82.759% { opacity: 1; } 87.356% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes a3_o { 0% { opacity: 1; } 74.713% { opacity: 1; } 82.759% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes a3_f { 0% { fill: #fff; } 81.609% { fill: #fff; } 82.759% { fill: #000; } 100% { fill: #000; } }
 @keyframes a4_o { 0% { opacity: 0; } 40.23% { opacity: 0; } 42.529% { opacity: 1; } 100% { opacity: 1; } }
 @keyframes a5_t { 0% { transform: translate(1155.5px,160.1px) scale(.5,.5); } 40.23% { transform: translate(1155.5px,160.1px) scale(.5,.5); } 51.724% { transform: translate(110.5px,342.9px) scale(.5,.5); } 100% { transform: translate(110.5px,342.9px) scale(.5,.5); } }
 @keyframes a5_o { 0% { opacity: 1; } 51.724% { opacity: 1; } 56.322% { opacity: 0; } 100% { opacity: 0; } }
@@ -28,7 +29,7 @@
 &lt;item&gt;
 &lt;title&gt;Title&lt;/title&gt;
 &lt;link&gt;https://wordpress.org/
-</text><text fill="#fff" font-size="14" font-family="'Courier New'" letter-spacing="0" word-spacing="0" font-weight="700" transform="translate(924.2,564.5) scale(.5,.5)" style="line-height: 16px; animation: 8.7s linear infinite both a3_t, 8.7s linear infinite both a3_o; animation-play-state: paused;">&lt;rss version=&quot;2.0&quot;&gt;
+</text><text fill="#fff" font-size="14" font-family="'Courier New'" letter-spacing="0" word-spacing="0" font-weight="700" transform="translate(924.2,564.5) scale(.5,.5)" style="line-height: 16px; animation: 8.7s linear infinite both a3_t, 8.7s linear infinite both a3_o, 8.7s linear infinite both a3_f; animation-play-state: paused;">&lt;rss version=&quot;2.0&quot;&gt;
 &lt;channel&gt;
 &lt;title&gt;WordPress&lt;/title&gt;
 &lt;item&gt;
