@@ -36,3 +36,11 @@ by Joel Spolsky
 <small>https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/</small>
 
 </section>
+
+<section data-markdown>
+
+> Metcalfe’s Law: The value of a network is proportional to the square of the number of connected users of the system.
+>
+> Think about it. The first person to own a telephone had a completely useless object. As soon as one other person had a telephone, it suddenly become exponentially more useful.
+
+</section>

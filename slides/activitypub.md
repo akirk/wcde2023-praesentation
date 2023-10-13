@@ -39,34 +39,6 @@
 
 <section data-markdown>
 
-# Historie
-
-*
-
-</section>
-
-<section data-markdown>
-
-<pre><code><entry xmlns="http://www.w3.org/2005/Atom"
-    xmlns:activity="http://activitystrea.ms/spec/1.0/">
-  <id>tag:photopanic.example.com,2009:activity/4859/4352</id>
-  <title>Geraldine posted a Photo on PhotoPanic</title>
-  <link rel="alternate" type="text/html" href="http://example.com/..." />
-  <activity:verb>post</activity:verb>
-  <activity:object>
-    <id>tag:photopanic.example.com,2009:photo/4352</id>
-    <title>My Cat</title>
-    <published>2009-11-02T15:29:00Z</published>
-    <link rel="alternate" type="text/html" href="http://example.com/..." />
-    <activity:object-type>photo</activity:object-type>
-  </activity:object>
-  <content type="html">...</content>
-</entry></code></pre>
-
-</section>
-
-<section data-markdown>
-
 <pre><code class="json">{
     "@context": "https://www.w3.org/ns/activitystreams",
     "type": "Create",
@@ -113,5 +85,15 @@
 <section data-markdown>
 
 # Pub
+
+</section>
+
+<section>
+
+Learning from the lessons of TCP/IP, Tim Berners-Lee made sure to keep the individual parts of the system as simple as possible (but no simpler). The World Wide Web didn’t succeed because the technology was the best; far from it. It succeeded because the technology was just simple enough—but also powerful enough—for people to get started with straight away.
+
+Think about it. The first person to own a telephone had a completely useless object. As soon as one other person had a telephone, it suddenly become exponentially more useful. That was the challenge facing the creator of a new protocol at the start of the 90s: that protocol was HTTP—the HyperText Transfer Protocol.
+
+https://adactio.com/articles/10887
 
 </section>
