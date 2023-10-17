@@ -1,0 +1,77 @@
+<!-- Matthias Pfefferle -->
+<section>
+    <h2>ActivityPub</h2>
+</section>
+
+<section>
+    <h2>Was ist ActivityPub?</h2>
+</section>
+
+<section>
+    <blockquote>The ActivityPub protocol is a decentralized social networking protocol based upon the ActivityStreams 2.0 data format. It provides a client to server API for creating, updating and deleting content, as well as a federated server to server API for delivering notifications and content.</blockquote>
+    <small>https://www.w3.org/TR/activitypub/</small>
+</section>
+
+<section>
+    <h2>Activity + Pub</h2>
+</section>
+
+<section>
+    <h2>Activity</h2>
+</section>
+
+<section>
+    <h2>ActivityStreams</h2>
+    <small>https://www.w3.org/TR/activitystreams-core/</small>
+</section>
+
+<section>
+<pre><code class="json">{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "type": "Create",
+    "id": "https://social.example/alyssa/posts/a29a6843",
+    "to": ["https://chatty.example/ben/"],
+    "actor": "https://social.example/alyssa/",
+    "object": {
+        "type": "Note",
+        "id": "https://social.example/alyssa/posts/49e2d03d",
+        "attributedTo": "https://social.example/alyssa/",
+        "to": ["https://chatty.example/ben/"],
+        "content": "Say, did you finish reading that book I lent you?"
+    }
+}</code></pre>
+</section>
+
+<section>
+<pre><code class="json">{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "type": "Like",
+    "id": "https://social.example/alyssa/posts/5312e10e",
+    "to": ["https://chatty.example/ben/"],
+    "actor": "https://social.example/alyssa/",
+    "object": "https://chatty.example/ben/p/51086"
+}</code></pre>
+</section>
+
+<section>
+<pre><code class="json">{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "type": "Follow",
+    "id": "https://social.example/alyssa/follow/12344bx3",
+    "to": ["https://chatty.example/ben/"],
+    "actor": "https://social.example/alyssa/",
+    "object": "https://chatty.example/ben/"
+}</code></pre>
+</section>
+
+<section>
+    <h2>Pub</h2>
+</section>
+
+<section data-background-color="white">
+    <img class="r-stretch" src="img/activitypub.png">
+</section>
+
+<section data-background-color="white">
+    <img class="r-stretch" src="img/fediverse-diagram.png">
+</section>
