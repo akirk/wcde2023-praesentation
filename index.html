@@ -72,6 +72,18 @@
 			padding: 2px 6px;
 		}
 	</style>
+	<script>
+		setInterval( function() {
+			if ( ! document.getElementById('followercount') ) {
+				return;
+			}
+			var f = 100 + Math.floor( Math.random() * 900 );
+			while ( f.length < 3) f = '&#160;' + f;
+			document.getElementById('followercount').innerHTML = f + 'K';
+			document.getElementById('followercount2').innerHTML = f + 'K';
+		},
+			500);
+	</script>
 </head>
 
 <body>
