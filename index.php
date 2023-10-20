@@ -10,4 +10,4 @@ if ( ! $secret ) {
 		exit;
 	}
 }
-echo str_replace( "{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true },", "{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true },{ src: 'https://reveal-multiplex.glitch.me/master.js', async: true },", str_replace( 'secret: null', 'secret: "' .  $secret . '"', $index ) );
+echo str_replace( "{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true },", "{ src: 'https://reveal-multiplex.glitch.me/master.js', async: true },", str_replace( 'secret: null', 'secret: "' .  $secret . '"', $index ) );
