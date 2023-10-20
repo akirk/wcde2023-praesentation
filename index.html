@@ -159,6 +159,16 @@
 	<script src="dist/plugin/highlight/highlight.js"></script>
 	<script>
 		Reveal.initialize({
+			multiplex: {
+				secret: null,
+				id: '1f7b144369d3f366',
+				url: 'https://reveal-multiplex.glitch.me/'
+			},
+			// Don't forget to add the dependencies
+			dependencies: [
+				{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+				{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+			],
 			controls: true,
 			controlsTutorial: true,
 			progress: true,
