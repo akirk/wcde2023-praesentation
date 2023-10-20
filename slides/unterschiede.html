@@ -14,7 +14,7 @@
 			<ul>
 				<li class="fragment">Server wird benötigt für direkte Zustellung</li>
 				<li class="fragment">Effizienter, da nur Aufrufe bei Neuigkeiten</li>
-				<li class="fragment">Aktionen werden abgebildet: <tt>Create</tt> <tt>Update</tt> <tt>Delete</tt></li>
+				<li class="fragment">Erlaubt Interaktion</li>
 				<li class="fragment">JSON</li>
 			</ul>
 		</li>
@@ -24,21 +24,22 @@
 <section>
 	<h2>ActivityStreams</h2>
 	<p>Früher auch als XML</p>
-    <pre><code><entry xmlns="http://www.w3.org/2005/Atom"
-        xmlns:activity="http://activitystrea.ms/spec/1.0/">
-      <id>tag:photopanic.example.com,2009:activity/4859/4352</id>
-      <title>Geraldine posted a Photo on PhotoPanic</title>
-      <link rel="alternate" type="text/html" href="http://example.com/..." />
-      <activity:verb>post</activity:verb>
-      <activity:object>
-        <id>tag:photopanic.example.com,2009:photo/4352</id>
-        <title>My Cat</title>
-        <published>2009-11-02T15:29:00Z</published>
-        <link rel="alternate" type="text/html" href="http://example.com/..." />
-        <activity:object-type>photo</activity:object-type>
-      </activity:object>
-      <content type="html">...</content>
-    </entry></code></pre>
+    <pre><code>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:activity="http://activitystrea.ms/spec/1.0/">
+	<id>tag:photopanic.example.com,2009:activity/4859/4352</id>
+	<title>Geraldine posted a Photo on PhotoPanic</title>
+	<link rel="alternate" type="text/html" href="http://example.com/..." />
+	<activity:verb>post</activity:verb>
+	<activity:object>
+		<id>tag:photopanic.example.com,2009:photo/4352</id>
+		<title>My Cat</title>
+		<published>2009-11-02T15:29:00Z</published>
+		<link rel="alternate" type="text/html" href="http://example.com/..." />
+		<activity:object-type>photo</activity:object-type>
+	</activity:object>
+	<content type="html">...</content>
+</entry>
+</code></pre>
 </section>
 
 <section>
